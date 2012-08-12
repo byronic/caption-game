@@ -1,0 +1,79 @@
+/* 
+styles!
+
+For PML project
+Byron Lagrone
+
+*/
+
+/*
+
+
+UNIVERSALS
+
+
+*/
+
+p
+{
+border:0;
+margin:0;
+padding:5px;
+font-family: "Trebuchet MS", Arial;
+font-size: 12px;
+}
+
+div
+{
+font-family: "Trebuchet MS", Arial;
+font-size:12px;
+}
+
+/*
+
+
+IDs
+
+
+*/
+
+#shell
+{
+width:760px;
+margin:0 auto;
+}
+
+#formbit
+{
+width:757px;
+height:700px;
+border: 1px solid #FF0000;
+}
+
+img
+{
+margin: 0 auto;
+}
+
+.infobar
+{
+width: 757px;
+height: 30px;
+border: 1px solid #00d9d9;
+}
+
+/*
+
+CLASSES
+
+*/
+
+.leftways
+{
+text-align: left;
+}
+
+.rightways
+{
+text-align: right;
+}

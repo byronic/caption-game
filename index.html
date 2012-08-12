@@ -1,9 +1,60 @@
 <html>
 <head>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript">
+
+///Chooses a random image, asserting the following conditions:
+///  1. Images are in the /img directory
+///  2. Images are in the format <number>.png, i.e. 0.png, 1.png, etc and that there are no gaps
+///  3. The highest numbered image is equal to MAX_IMAGE minus 1
+var MAX_IMAGE = 3;
+function chooseRandomImage()
+{
+	// generate a random integer between 0 and MAX_IMAGE
+	var num = Math.floor((Math.random()*MAX_IMAGE));
+	// replace the image in div "imgz" with the image
+	//first, set up code:
+	var out = "";
+	out += "<img src=\"";
+	out += num.toString();
+	out += ".png\"";
+	out += "\/";
+	out += ">";
+	document.getElementById('imgz').innerHTML=out;
+}
+
+function performCaption()
+{
+	//TODO: write this.
+}
+
+</script>
+
 </head>
 
 <body>
 <div id="shell">
+
+<div id="topbar" class="infobar">
+<p class="leftways">Caption Contest Game</p>
+</div><!--/topbar-->
+
+<div id="formbit">
+<div id="imgz"> <!-- contents of this div should be the image dynamically by JS -->
+<script type="text/javascript">chooseRandomImage();</script></div><!--/imgz-->
+<form>
+<br />
+<br />
+<input type="text" id="inp_0" /><br />
+
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" value="Submit" onclick="chooseRandomImage()">Post Caption!</button>
+</form>
+</div><!--/formbit-->
+
+<div id="bottombar" class="infobar">
+</div><!--/bottombar-->
 
 </div><!--/shell-->
 </body>
