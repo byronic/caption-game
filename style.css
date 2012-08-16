@@ -1,7 +1,7 @@
 /* 
 styles!
 
-For PML project
+For caption-game project
 Byron Lagrone
 
 */
@@ -48,11 +48,6 @@ margin:0 auto;
 width:757px;
 height:700px;
 border: 1px solid #FF0000;
-}
-
-img
-{
-margin: 0 auto;
 }
 
 .infobar
