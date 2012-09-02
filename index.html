@@ -29,6 +29,13 @@ function chooseRandomImage()
 function performCaption()
 {
 	//This has been submitted as an issue.
+	// Place the caption! Centered, please.
+	var out ="";
+	out += "<p>" + document.getElementById('inp_0').value + "</p>";
+	document.getElementById('captionarea').innerHTML=out;
+	//TODO: Add print button / view for captioned image
+	//TODO: Add reset button to allow you to re-do the caption
+	
 }
 
 </script>
@@ -44,14 +51,17 @@ function performCaption()
 
 <div id="formbit">
 <div id="imgz"> <!-- contents of this div should be the image dynamically by JS -->
-<script type="text/javascript">chooseRandomImage();</script></div><!--/imgz-->
+<script type="text/javascript">chooseRandomImage();</script>
+</div><!--/imgz-->
+<div id="captionarea">
 <form>
 <br />
 <br />
 <input type="text" id="inp_0" /><br />
 
-<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" value="Submit" onclick="chooseRandomImage()">Post Caption!</button>
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" value="Submit" onclick="performCaption()">Post Caption!</button>
 </form>
+</div><!--/captionarea-->
 </div><!--/formbit-->
 
 <div id="bottombar" class="infobar">
