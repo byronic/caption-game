@@ -56,12 +56,24 @@ width: 757px;
 height:200px;
 }
 
-.infobar
+#captionarea p
 {
-width: 757px;
-height: 30px;
-border: 1px solid #00d9d9;
+text-align: center;
 }
+
+#captionarea form
+{
+text-align: center;
+}
+
+/* as a reminder, inp_0 is the text box */
+#inp_0
+{
+width:600px;
+text-align: center;
+height:25px;
+}
+
 
 /*
 
@@ -72,6 +84,13 @@ CLASSES
 .leftways
 {
 text-align: left;
+}
+
+.infobar
+{
+width: 757px;
+height: 30px;
+border: 1px solid #00d9d9;
 }
 
 .rightways
